@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h1zada{
+            color: gray;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        //Removes elementos dentro de div's
+        const container = document.getElementById('container')
+        const title = document.createElement('h1')
+        const text = document.createElement('p')
+        text.innerText = 'Hello World'
+        title.innerText = 'Olá Mundo'
+
+        container.appendChild(title)
+        text.classList.add('h1zada')
+        title.classList.add('h1zada')
+
+        container.removeChild(title)
+    </script>
+</body>
+</html>

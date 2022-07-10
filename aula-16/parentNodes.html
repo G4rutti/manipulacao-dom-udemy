@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="container">
+        <div class="lista-container">
+            <ul class="lista">
+                <li>Item 01</li>
+                <li>Item 02</li>
+                <li>Item 03</li>
+            </ul>
+        </div>
+    </main>
+
+    <script>
+        const main = document.getElementById('container')
+        const div = document.getElementById('lista-container')
+        const ul = document.getElementById('lista')
+
+        console.log(main.parentNode) //body
+        console.log(div.parentNode) //main
+        console.log(ul.parentNode) //div 
+    </script>
+</body>
+</html>

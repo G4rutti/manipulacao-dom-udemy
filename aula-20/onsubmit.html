@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="enviar()">
+        <label for="input">Informe sua Idade:</label>
+        <input type="number" name="input" id="age" placeholder="18">
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <script>
+        function enviar(){
+            const idade = document.getElementById('age')
+            if(idade.value < 18){
+                alert('Cai fora mlk')
+            }else{
+                alert('Pode entrar')
+            }
+        }
+    </script>
+</body>
+</html>
